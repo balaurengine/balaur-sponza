@@ -1,0 +1,1127 @@
+[[assets]]
+id = "sponza_material0"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/5061699253647017043.png"
+alpha_cutoff = 0.5
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/11872827283454512094.jpg"
+normal = "models/8773302468495022225.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "mask"
+alpha_cutoff = 0.5
+attenuation_distance = 0.0
+double_sided = true
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material1"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/7268504077753552595.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/8503262930880235456.jpg"
+normal = "models/4477655471536070370.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material2"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = false
+
+[assets.params]
+albedo = "models/white.png"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 0.0
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material3"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/8006627369776289000.png"
+alpha_cutoff = 0.5
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/715093869573992647.jpg"
+normal = "models/12501374198249454378.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "mask"
+alpha_cutoff = 0.5
+attenuation_distance = 0.0
+double_sided = true
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material4"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/8750083169368950601.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/16885566240357350108.jpg"
+normal = "models/13982482287905699490.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material5"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/5792855332885324923.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/11968150294050148237.jpg"
+normal = "models/16299174074766089871.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material6"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/14650633544276105767.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/4871783166746854860.jpg"
+normal = "models/2051777328469649772.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material7"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/15295713303328085182.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/9916269861720640319.jpg"
+normal = "models/10388182081421875623.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material8"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/6047387724914829168.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/8051790464816141987.jpg"
+normal = "models/15722799267630235092.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material9"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/5823059166183034438.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/13824894030729245199.jpg"
+normal = "models/14267839433702832875.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material10"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/7441062115984513793.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/8114461559286000061.jpg"
+normal = "models/6667038893015345571.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material11"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/11490520546946913238.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/3455394979645218238.jpg"
+normal = "models/3628158980083700836.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material12"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/6151467286084645207.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/8783994986360286082.jpg"
+normal = "models/7645212358685992005.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material13"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/4975155472559461469.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/3371964815757888145.jpg"
+normal = "models/2299742237651021498.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material14"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/4675343432951571524.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/7815564343179553343.jpg"
+normal = "models/7056944414013900257.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material15"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/2775690330959970771.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/7815564343179553343.jpg"
+normal = "models/2374361008830720677.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material16"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/2185409758123873465.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/7815564343179553343.jpg"
+normal = "models/332936164838540657.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material17"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/17876391417123941155.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/466164707995436622.jpg"
+normal = "models/6593109234861095314.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material18"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/11474523244911310074.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/466164707995436622.jpg"
+normal = "models/4601176305987539675.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material19"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/9288698199695299068.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/466164707995436622.jpg"
+normal = "models/4910669866631290573.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material20"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/16275776544635328252.png"
+alpha_cutoff = 0.5
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/1219024358953944284.jpg"
+normal = "models/14170708867020035030.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "mask"
+alpha_cutoff = 0.5
+attenuation_distance = 0.0
+double_sided = true
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material21"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/755318871556304029.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/2411100444841994089.jpg"
+normal = "models/3827035219084910048.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material22"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/8481240838833932244.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/17556969131407844942.jpg"
+normal = "models/10381718147657362067.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material23"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/6772804448157695701.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/13196865903111448057.jpg"
+normal = "models/759203620573749278.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[assets]]
+id = "sponza_material24"
+shader = "shaders/imported.wesl"
+type = "material"
+
+[assets.features]
+emissive_map = false
+metallic_roughness_map = true
+
+[assets.params]
+albedo = "models/2969916736137545357.jpg"
+alpha_cutoff = 0.0
+attenuation = [1.0, 1.0, 1.0, 0.0]
+base_color = [0.5879999995231628, 0.5879999995231628, 0.5879999995231628, 1.0]
+emissive = [0.0, 0.0, 0.0, 1.0]
+ior = 1.5
+metallic = 1.0
+metallic_roughness = "models/8747919177698443163.jpg"
+normal = "models/14118779221266351425.jpg"
+reflectance = 0.5
+roughness = 1.0
+thickness = 0.0
+transmission = 0.0
+
+[assets.surface]
+alpha = "opaque"
+alpha_cutoff = 0.0
+attenuation_distance = 0.0
+double_sided = false
+ior = 1.5
+thickness = 0.0
+transmission = 0.0
+
+[[nodes]]
+id = "n_sponza"
+name = "Sponza"
+parent = ""
+
+[[nodes]]
+id = "n_sponza_mesh_material0"
+name = "SponzaMesh_material0"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material0"
+
+[nodes.mesh.source]
+part = "material0"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material1"
+name = "SponzaMesh_material1"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material1"
+
+[nodes.mesh.source]
+part = "material1"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material2"
+name = "SponzaMesh_material2"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material2"
+
+[nodes.mesh.source]
+part = "material2"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material3"
+name = "SponzaMesh_material3"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material3"
+
+[nodes.mesh.source]
+part = "material3"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material4"
+name = "SponzaMesh_material4"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material4"
+
+[nodes.mesh.source]
+part = "material4"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material5"
+name = "SponzaMesh_material5"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material5"
+
+[nodes.mesh.source]
+part = "material5"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material6"
+name = "SponzaMesh_material6"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material6"
+
+[nodes.mesh.source]
+part = "material6"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material7"
+name = "SponzaMesh_material7"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material7"
+
+[nodes.mesh.source]
+part = "material7"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material8"
+name = "SponzaMesh_material8"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material8"
+
+[nodes.mesh.source]
+part = "material8"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material9"
+name = "SponzaMesh_material9"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material9"
+
+[nodes.mesh.source]
+part = "material9"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material10"
+name = "SponzaMesh_material10"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material10"
+
+[nodes.mesh.source]
+part = "material10"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material11"
+name = "SponzaMesh_material11"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material11"
+
+[nodes.mesh.source]
+part = "material11"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material12"
+name = "SponzaMesh_material12"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material12"
+
+[nodes.mesh.source]
+part = "material12"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material13"
+name = "SponzaMesh_material13"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material13"
+
+[nodes.mesh.source]
+part = "material13"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material14"
+name = "SponzaMesh_material14"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material14"
+
+[nodes.mesh.source]
+part = "material14"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material15"
+name = "SponzaMesh_material15"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material15"
+
+[nodes.mesh.source]
+part = "material15"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material16"
+name = "SponzaMesh_material16"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material16"
+
+[nodes.mesh.source]
+part = "material16"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material17"
+name = "SponzaMesh_material17"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material17"
+
+[nodes.mesh.source]
+part = "material17"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material18"
+name = "SponzaMesh_material18"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material18"
+
+[nodes.mesh.source]
+part = "material18"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material19"
+name = "SponzaMesh_material19"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material19"
+
+[nodes.mesh.source]
+part = "material19"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material20"
+name = "SponzaMesh_material20"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material20"
+
+[nodes.mesh.source]
+part = "material20"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material21"
+name = "SponzaMesh_material21"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material21"
+
+[nodes.mesh.source]
+part = "material21"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material22"
+name = "SponzaMesh_material22"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material22"
+
+[nodes.mesh.source]
+part = "material22"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material23"
+name = "SponzaMesh_material23"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material23"
+
+[nodes.mesh.source]
+part = "material23"
+source = "models/sponza.gltf"
+
+[[nodes]]
+id = "n_sponza_mesh_material24"
+name = "SponzaMesh_material24"
+parent = "n_sponza"
+
+[nodes.mesh]
+material = "#sponza_material24"
+
+[nodes.mesh.source]
+part = "material24"
+source = "models/sponza.gltf"

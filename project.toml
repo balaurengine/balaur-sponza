@@ -1,0 +1,3 @@
+[application]
+name = "sponza"
+main_scene = "scenes/main.toml"

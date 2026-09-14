@@ -1,0 +1,12 @@
+// One still, once the probe's capture has landed.
+
+pub fn init(this) {
+    this.frames = 0;
+}
+
+pub fn update(this, dt) {
+    this.frames += 1;
+    if this.frames == 40 {
+        render::screenshot("sponza.png");
+    }
+}

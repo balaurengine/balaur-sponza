@@ -1,0 +1,7 @@
+# The Khronos model and what `balaur import` makes of it: 50 MB of somebody
+# else's art. `scripts/fetch.py` pulls it back.
+source/
+models/
+
+# Written by scripts/stage.py from the imported scene.
+scenes/main.toml

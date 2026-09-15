@@ -10,19 +10,44 @@ import tomllib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 STAGE = """
-[[nodes]]
-id = "n_shot"
-name = "Shot"
-parent = "n_sponza"
-script = { source = "scripts/shot.rn" }
+# Every triangle in the file as one asset, for the collider to be fitted to.
+[[assets]]
+id = "sponza_shell"
+type = "mesh"
+source = "models/sponza.gltf"
 
+# The arcade as static geometry. No `body3d`, so it never moves and never
+# costs the solver anything; `fix_internal_edges` keeps the player from
+# catching on the seams between its 260 thousand triangles.
 [[nodes]]
-id = "n_camera"
-name = "Camera"
+id = "n_shell"
+name = "Shell"
 parent = "n_sponza"
+
+[nodes.collider3d]
+kind = "trimesh"
+mesh = "#sponza_shell"
+fix_internal_edges = true
+clean = true
+
+# Eyes on a capsule, from the editor's library: WASD walks, the mouse looks.
+[[nodes]]
+id = "n_player"
+name = "Player"
+parent = "n_sponza"
+script = { source = "scripts/first_person.rn", props = { yaw = -90.0 } }
 
 [nodes.transform]
-position = [-7.5, 2.0, 0.0]
+position = [-9.0, 1.6, 0.0]
+
+[nodes.character3d]
+snap_to_ground = 0.3
+autostep = 0.4
+
+[nodes.collider3d]
+kind = "capsule"
+radius = 0.35
+height = 1.2
 
 [nodes.camera]
 kind = "3d"
@@ -80,6 +105,18 @@ position = [0.0, 5.0, 0.0]
 half_extents = [16.0, 8.0, 7.0]
 falloff = 2.0
 intensity = 1.0
+[[nodes]]
+id = "n_drive"
+name = "Drive"
+parent = "n_player"
+
+[nodes.script]
+source = "scripts/flythrough.rn"
+[nodes.script.props]
+# Set when the clip or the still is being taken; empty for a normal run.
+shot = ""
+frames = ""
+
 """
 
 

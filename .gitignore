@@ -5,3 +5,5 @@ models/
 
 # Written by scripts/stage.py from the imported scene.
 scenes/main.toml
+
+# Written by scripts/media.sh from a run; the .webm and .mp4 are committed.

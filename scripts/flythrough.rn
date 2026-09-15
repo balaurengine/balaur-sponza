@@ -1,0 +1,37 @@
+// Drives the player for an offscreen run: walk down the arcade, and write a
+// still or one picture a frame when asked. A normal session sets neither, so
+// nothing here touches an interactive run.
+
+pub fn exports() {
+    #{ shot: "", frames: "" }
+}
+
+pub fn init(this) {
+    this.frame = 0;
+}
+
+pub fn update(this, dt) {
+    this.frame += 1;
+    // The rig starts facing down the arcade, set as a script property in the
+    // scene, so this only has to walk.
+    input::feed_key(input::KEY_W, true);
+    if this.shot != "" && this.frame == 20 {
+        render::screenshot(this.shot);
+    }
+    // Eight seconds at one picture a frame. The first is drawn before the
+    // scene is, so it is skipped.
+    if this.frames != "" && this.frame >= 2 && this.frame <= 241 {
+        render::screenshot(`${this.frames}/${padded(this.frame)}.png`);
+    }
+}
+
+// Three digits, so a directory listing plays the frames in order.
+fn padded(n) {
+    if n < 10 {
+        `00${n}`
+    } else if n < 100 {
+        `0${n}`
+    } else {
+        `${n}`
+    }
+}

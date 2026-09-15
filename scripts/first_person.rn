@@ -1,0 +1,56 @@
+// Walk with WASD, look with the mouse; the camera and the character are one
+// node. Raw keys rather than actions, so the rig works in a project that has
+// declared none: swap them for `input::action_*` to rebind.
+
+pub fn exports() {
+    #{ speed: 4.5, sensitivity: 0.12, gravity: 24.0, jump: 7.0, pitch: 0.0, yaw: 0.0 }
+}
+
+pub fn init(this) {
+    this.vy = 0.0;
+}
+
+pub fn update(this, dt) {
+    let (dx, dy) = input::mouse_delta();
+    this.yaw -= dx * this.sensitivity;
+    // Straight up and straight down are where a first-person view stops:
+    // past them the world rolls over.
+    this.pitch = math::clamp(this.pitch - dy * this.sensitivity, -89.0, 89.0);
+    let yaw = math::rad(this.yaw);
+    let pitch = math::rad(this.pitch);
+    // A 3D camera is aimed by `camera.look_at` and never by the node's own
+    // rotation, so looking around is moving the point it looks at. The
+    // rotation still turns the body, which is what a mesh under this follows.
+    let flat = math::cos(pitch);
+    let eye = this.node.transform.position;
+    let ahead = [
+        eye.x - math::sin(yaw) * flat,
+        eye.y + math::sin(pitch),
+        eye.z - math::cos(yaw) * flat,
+    ];
+    this.node.patch_component("camera", #{ look_at: ahead });
+    this.node.transform.rotation_euler = [0.0, yaw, 0.0];
+}
+
+pub fn fixed_update(this, dt) {
+    let forward = axis(input::KEY_W, input::KEY_S);
+    let sideways = axis(input::KEY_D, input::KEY_A);
+    // Walking is flat: the pitch aims the view, never the feet.
+    let yaw = this.yaw * math::PI / 180.0;
+    let (sin, cos) = (math::sin(yaw), math::cos(yaw));
+    let x = (sideways * cos - forward * sin) * this.speed * dt;
+    let z = (-sideways * sin - forward * cos) * this.speed * dt;
+    if this.node.character3d.is_grounded() {
+        this.vy = if input::is_down(input::KEY_SPACE) { this.jump } else { 0.0 };
+    } else {
+        this.vy -= this.gravity * dt;
+    }
+    this.node.character3d.move_character(x, this.vy * dt, z);
+}
+
+/// One axis from two keys, so a pair reads as -1, 0 or 1.
+fn axis(positive, negative) {
+    let up = if input::is_down(positive) { 1.0 } else { 0.0 };
+    let down = if input::is_down(negative) { 1.0 } else { 0.0 };
+    up - down
+}

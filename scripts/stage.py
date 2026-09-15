@@ -31,6 +31,9 @@ post = ["ssao", "bloom", "tonemap", "vignette", "fxaa"]
 bloom_threshold = 1.6
 bloom_intensity = 0.35
 vignette_amount = 0.32
+# Sponza is thirty units across, so the occlusion pass reads at its scale.
+ssao_radius = 0.6
+ssao_bias = 0.25
 
 [[nodes]]
 id = "n_env"

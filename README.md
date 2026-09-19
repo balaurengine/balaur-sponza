@@ -1,17 +1,9 @@
 # Sponza in Balaur
 
-The scene every renderer is compared against, imported into
-[Balaur](https://balaurengine.org), lit by its own sky, in
-first person.
-
 https://github.com/user-attachments/assets/bb9c06ff-6c6c-4853-a7bb-a24f1ded9b26
 
-Nothing here was created by hand except a camera, a sun, an environment and a
+Everything was imported automatically, except a camera, a sun, an environment and a
 player. One `balaur import` did the rest.
-
-
-
-
 
 ## Running it
 

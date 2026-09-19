@@ -9,7 +9,10 @@ first person.
 Nothing here was created by hand except a camera, a sun, an environment and a
 player. One `balaur import` did the rest.
 
-https://github.com/balaurengine/balaur-sponza/assets/sponza_walk.mp4
+
+https://github.com/user-attachments/assets/bb9c06ff-6c6c-4853-a7bb-a24f1ded9b26
+
+
 
 ## Running it
 

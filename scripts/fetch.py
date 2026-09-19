@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Pull the Khronos Sponza into `source/`.
+"""Pull the Khronos Sponza in beside this repository, not into it.
 
-The model is CC BY 4.0 and 50 MB, so it is fetched rather than committed: this
-repository holds the staging and the commands, not somebody else's art."""
+A project holds what `balaur import` wrote; the file it was written from is
+the importer's input and belongs outside, or `balaur export` packs fifty
+megabytes the game never reads. The model is CC BY 4.0 and 50 MB, so it is
+fetched rather than committed: this repository holds the staging and the
+commands, not somebody else's art."""
 
 import concurrent.futures
 import json
@@ -13,11 +16,11 @@ LISTING = (
     "https://api.github.com/repos/KhronosGroup/glTF-Sample-Assets"
     "/contents/Models/Sponza/glTF"
 )
-OUT = pathlib.Path(__file__).resolve().parent.parent / "source"
+OUT = pathlib.Path(__file__).resolve().parent.parent.parent / "sponza-source"
 
 
 def main():
-    OUT.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
     with urllib.request.urlopen(LISTING) as page:
         files = json.load(page)
 

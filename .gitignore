@@ -1,9 +1,12 @@
-# The Khronos model and what `balaur import` makes of it: 50 MB of somebody
-# else's art. `scripts/fetch.py` pulls it back.
-source/
+# What `balaur import` made of the Khronos model: 50 MB of somebody else's
+# art. `scripts/fetch.py` pulls the original in beside this repository, not
+# into it, so nothing here has to be ignored for the exporter's sake.
 models/
 
 # Written by scripts/stage.py from the imported scene.
 scenes/main.toml
 
 # Written by scripts/media.sh from a run; the .webm and .mp4 are committed.
+
+# macOS Finder metadata.
+.DS_Store

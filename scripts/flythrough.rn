@@ -15,12 +15,14 @@ pub fn update(this, dt) {
     // The rig starts facing down the arcade, set as a script property in the
     // scene, so this only has to walk.
     input::feed_key(input::KEY_W, true);
+    // A frame carries one screenshot request, so `scripts/media.sh` sets one of
+    // these per run rather than both.
     if this.shot != "" && this.frame == 20 {
         render::screenshot(this.shot);
     }
-    // Eight seconds at one picture a frame. The first is drawn before the
-    // scene is, so it is skipped.
-    if this.frames != "" && this.frame >= 2 && this.frame <= 241 {
+    // Eight seconds at one picture a frame. The offscreen loop draws before it
+    // steps, so the first two frames predate the scene's camera.
+    if this.frames != "" && this.frame >= 3 && this.frame <= 242 {
         render::screenshot(`${this.frames}/${padded(this.frame)}.png`);
     }
 }

@@ -1,5 +1,9 @@
 [application]
 name = "sponza"
+# The still and the clip this repository shows in its README. They sit beside
+# the project because that is where a README reads them from, and the game
+# never does.
+ignore = ["sponza.png", "sponza_walk.*"]
 main_scene = "scenes/main.toml"
 
 # The size the clip and the still are rendered at offscreen, which is what the

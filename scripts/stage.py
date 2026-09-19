@@ -49,16 +49,20 @@ kind = "capsule"
 radius = 0.35
 height = 1.2
 
+# The eye, on its own node: the capsule's own height wobbles a millimetre or
+# two per triangle it crosses, and the rig keeps that off the camera.
+[[nodes]]
+id = "n_eye"
+name = "Eye"
+parent = "n_player"
+
+[nodes.transform]
+position = [0.0, 0.7, 0.0]
+
 [nodes.camera]
 kind = "3d"
 look_at = [8.0, 3.0, 0.0]
 post = ["ssao", "bloom", "tonemap", "vignette", "fxaa"]
-bloom_threshold = 1.6
-bloom_intensity = 0.35
-vignette_amount = 0.32
-# Sponza is thirty units across, so the occlusion pass reads at its scale.
-ssao_radius = 0.6
-ssao_bias = 0.25
 
 [[nodes]]
 id = "n_env"
@@ -67,13 +71,10 @@ parent = "n_sponza"
 
 [nodes.environment]
 sky = "skies/clear-day.png"
-sky_intensity = 2.2
 show_sky = true
 tonemap = "aces"
-exposure = 1.1
 ambient = "#000000"
 shadows = true
-shadow_resolution = 2048
 shadow_distance = 40.0
 
 [[nodes]]
@@ -88,7 +89,6 @@ rotation_euler = [-1.15, 0.5, 0.0]
 [nodes.light3d]
 kind = "directional"
 color = "#fff4e0"
-intensity = 5.0
 shadows = true
 
 # The court is a room, so what the marble reflects is the room rather than the

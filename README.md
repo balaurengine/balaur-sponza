@@ -13,8 +13,8 @@ https://github.com/balaurengine/balaur-sponza/assets/sponza_walk.mp4
 
 ## Running it
 
-    python3 scripts/fetch.py                     # the model, 50 MB, into source/
-    balaur import source/Sponza.gltf --project . # 25 materials, 103 primitives
+    python3 scripts/fetch.py                          # 50 MB, beside this repo
+    balaur import ../sponza-source/Sponza.gltf --project .  # 25 materials
     python3 scripts/stage.py                     # the staging over the import
     balaur run .
 
@@ -33,10 +33,17 @@ Sponza's 25 materials it keeps:
 - **The sampler.** glTF wraps and mip-maps by default; Balaur clamps and does
   not. A sidecar per image carries the file's own settings, without which the
   floor — whose coordinates run past one — clamps to a single texel and draws
-  flat.
+  flat. It also says which maps are colour: a roughness read back through the
+  sRGB curve is not the number the file stored, and a scene of mirrors is what
+  a glancing sky then makes of it.
 - **One mesh node per material,** so each surface draws with its own. The
   mesh asset names a `part`, and the parser keeps only that material's
   triangles out of the 103 primitives.
+
+Nothing is tuned over it. The staging names a camera, a sun, a sky, a probe
+and a player, and every number those carry is the engine's own except
+`shadow_distance`, which is in world units and this arcade is thirty of them
+long.
 
 `scenes/sponza.toml` is that output, committed so it can be read without
 running anything. `scripts/stage.py` writes `scenes/main.toml` from it plus
@@ -48,10 +55,8 @@ never has to know about 25 materials.
 - **Image-based lighting.** The sky lights the whole atrium; there is one
   directional light for the sun and nothing else. It replaces the flat
   ambient rather than adding to it.
-- **Screen-space occlusion**, in the creases where the columns meet the floor.
-  Its radius and bias are set on the camera, because they are in world units
-  and this arcade is thirty of them across. At the defaults, tuned for a
-  room, every glancing surface occludes itself into black.
+- **Screen-space occlusion**, in the creases where the columns meet the floor
+  and under the plinths, at the pass's own defaults.
 - **A reflection probe** over the court, so the marble reflects the arcade
   around it rather than the sky above the building.
 - **The finishing passes** on `camera.post`: bloom, a vignette, and FXAA,

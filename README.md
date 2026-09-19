@@ -100,4 +100,4 @@ The model is
 [Sponza](https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Sponza)
 from the Khronos glTF sample assets, CC BY 4.0, after the original by Frank
 Meinl for Crytek. It is fetched rather than committed, and nothing here is
-derived from it. Everything else in this repository is MIT.
+derived from it. Everything else in this repository is [MIT](LICENSE).

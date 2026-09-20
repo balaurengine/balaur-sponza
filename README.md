@@ -16,7 +16,8 @@ player. One `balaur import` did the rest.
 
 **W A S D** to walk, mouse to look, **space** to jump.
 
-Run `scripts/media.sh` to write an automated clip.
+Run `scripts/media.sh` to write an automated clip. `--reel <path>` writes a
+second copy at the full 1920x1080, which is what the release reel concatenates.
 
 ## What the import does
 

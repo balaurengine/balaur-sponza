@@ -59,8 +59,7 @@ parent = "n_player"
 [nodes.transform]
 position = [0.0, 0.7, 0.0]
 
-[nodes.camera]
-kind = "3d"
+[nodes.camera3d]
 look_at = [8.0, 3.0, 0.0]
 post = ["ssao", "bloom", "tonemap", "vignette", "fxaa"]
 

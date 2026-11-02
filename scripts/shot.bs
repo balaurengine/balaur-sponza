@@ -1,0 +1,19 @@
+// One still, once the probe's capture has landed.
+
+pub class Shot {
+    node: Node,
+    frames: int,
+}
+
+impl Shot {
+    pub fn init() {
+        self.frames = 0;
+    }
+
+    pub fn update(dt: float) {
+        self.frames += 1;
+        if self.frames == 40 {
+            render::screenshot("sponza.png");
+        }
+    }
+}

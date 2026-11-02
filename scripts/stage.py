@@ -16,6 +16,11 @@ id = "sponza_shell"
 type = "mesh"
 source = "models/sponza.gltf"
 
+[[assets]]
+id = "sponza_effects"
+type = "camera_effects"
+post = ["ssao", "bloom", "tonemap", "vignette", "fxaa"]
+
 # The arcade as static geometry. No `body3d`, so it never moves and never
 # costs the solver anything; `fix_internal_edges` keeps the player from
 # catching on the seams between its 260 thousand triangles.
@@ -25,29 +30,24 @@ name = "Shell"
 parent = "n_sponza"
 
 [nodes.collider3d]
-kind = "trimesh"
-mesh = "#sponza_shell"
-fix_internal_edges = true
-clean = true
+shape = { kind = "triangle_mesh", mesh = "#sponza_shell", fix_internal_edges = true }
 
 # Eyes on a capsule, from the editor's library: WASD walks, the mouse looks.
 [[nodes]]
 id = "n_player"
 name = "Player"
 parent = "n_sponza"
-script = { source = "scripts/first_person.rn", props = { yaw = -90.0 } }
+script = { source = "scripts/first_person.bs", props = { yaw = -90.0 } }
 
 [nodes.transform]
 position = [-9.0, 1.6, 0.0]
 
 [nodes.character3d]
-snap_to_ground = 0.3
-autostep = 0.4
+floor_snap_length = 0.3
+step_height = 0.4
 
 [nodes.collider3d]
-kind = "capsule"
-radius = 0.35
-height = 1.2
+shape = { kind = "capsule", radius = 0.35, height = 1.2 }
 
 # The eye, on its own node: the capsule's own height wobbles a millimetre or
 # two per triangle it crosses, and the rig keeps that off the camera.
@@ -61,7 +61,7 @@ position = [0.0, 0.7, 0.0]
 
 [nodes.camera3d]
 look_at = [8.0, 3.0, 0.0]
-post = ["ssao", "bloom", "tonemap", "vignette", "fxaa"]
+effects = "#sponza_effects"
 
 [[nodes]]
 id = "n_env"
@@ -70,10 +70,10 @@ parent = "n_sponza"
 
 [nodes.environment]
 sky = "skies/clear-day.png"
-show_sky = true
+sky_enabled = true
 tonemap = "aces"
-ambient = "#000000"
-shadows = true
+ambient_color = "#000000"
+shadow_enabled = true
 shadow_distance = 40.0
 
 [[nodes]]
@@ -88,7 +88,6 @@ rotation_euler = [-1.15, 0.5, 0.0]
 [nodes.light3d]
 kind = "directional"
 color = "#fff4e0"
-shadows = true
 
 # The court is a room, so what the marble reflects is the room rather than the
 # sky above the building.
@@ -101,7 +100,7 @@ parent = "n_sponza"
 position = [0.0, 5.0, 0.0]
 
 [nodes.reflection_probe]
-half_extents = [16.0, 8.0, 7.0]
+size = [32.0, 16.0, 14.0]
 falloff = 2.0
 intensity = 1.0
 [[nodes]]
@@ -110,7 +109,7 @@ name = "Drive"
 parent = "n_player"
 
 [nodes.script]
-source = "scripts/flythrough.rn"
+source = "scripts/flythrough.bs"
 [nodes.script.props]
 # Set when the clip or the still is being taken; empty for a normal run.
 shot = ""
